@@ -1,0 +1,28 @@
+<!-- 
+<div class="card">
+    <div class="card-body">
+     
+      
+      <h5 class="card-title" #bookTitleElement>{{ bookTitle }}</h5>
+      <div class="card-ph">{{bookParagraph }}</div>
+  
+    <button  
+      [routerLink]="['/book', bookId]" [state]="{ name: bookTitle, description: bookParagraph }">see more</button>
+    </div>
+  </div> -->
+
+  
+<div class="card">
+    <div class="card-body">
+     
+      
+      <h5 class="card-title">{{bookTitle}}</h5>
+      <div class="card-ph">{{bookdesc}}</div>
+      <div class="card-ph">{{bookId}}</div>
+  
+    <button 
+    [routerLink]="['/book', bookId]" [state]="{ name: bookTitle, desc: bookdesc }" 
+      >see more
+    </button>
+    </div>
+  </div>

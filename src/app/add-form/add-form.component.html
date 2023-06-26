@@ -1,0 +1,13 @@
+
+<div class="layout-form">
+    <form  (ngSubmit)="submitBook()">
+    <div class="form-holder   " >
+      <input type="text"  name="title" placeholder="Book Title" [(ngModel)]="bookTitle"  >
+      <textarea   name="paragraph" placeholder="description" [(ngModel)]="bookDesc"   > </textarea>
+      <button  type="submit">Add Book</button>
+    </div>
+
+  </form>
+  
+  </div>
+  
